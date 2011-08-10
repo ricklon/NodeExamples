@@ -1,0 +1,8 @@
+!!!Node Examples
+
+
+The goal of this is to show several basic examples of Node.js from hello world to handling requests XMLHttpRequest with express, and Jquery Template language.
+
+npm install express
+npm install jqtpl
+
