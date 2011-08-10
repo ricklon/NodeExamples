@@ -3,6 +3,11 @@ var jqtpl = require("jqtpl");
 var app = express.createServer();
 
 app.configure(function() {
+	app.use(express.logger());
+	app.use(express.static(__dirname + '/static'));
+});
+
+app.configure(function() {
     app.use(express.logger());
     app.use(express.errorHandler({
         dumpExceptions: true,
