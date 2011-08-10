@@ -12,10 +12,10 @@ app.configure(function() {
 app.set("view engine", "html");
 app.register(".html", require("jqtpl").express);
 
-app.set('views', __dirname, +'/views/');
+app.set('views', __dirname +'/views/');
 
 app.get('/', function(req, res) {
-    res.send('Hello World');
+	res.render('index.html');
 });
 
-app.listen(process.env.C9_PORT);
+app.listen(37881);
