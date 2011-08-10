@@ -1,0 +1,31 @@
+Curl Examples:
+
+Examples from here:
+http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/
+
+get:
+curl "http://nodeexamples.ricklon.cloud9ide.com/?key=value&key1=1"
+curl -i -H "Accept: application/json" http://nodeexamples.ricklon.cloud9ide.com
+curl -i -H "Accept: application/json" http://nodeexamples.ricklon.cloud9ide.com/?zipcode=93031  
+curl -i -H "Accept: application/json" "http://nodeexamples.ricklon.cloud9ide.com/?firstName=james&lastName=wallis" 
+curl -i -H "Accept: application/json" http://nodeexamples.ricklon.cloud9ide.com/persons/person/1  
+curl -i -H "Accept: application/json" http://nodeexamples.ricklon.cloud9ide.com/persons?zipcode=93031  
+curl -i -H "Accept: application/json" "http://nodeexamples.ricklon.cloud9ide.com/persons?firstName=james&lastName=wallis"  
+
+post:
+curl -X POST -d  "key=value&num=3380"  http://nodeexamples.ricklon.cloud9ide.com
+curl -i -H "Accept: application/json" -X POST -d "firstName=james" http://nodeexamples.ricklon.cloud9ide.com/persons/person  
+
+post a file:
+curl -X POST -d @filename http://nodeexamples.ricklon.cloud9ide.com
+
+put:
+curl -i -H "Accept: application/json" -X PUT -d "phone=1-800-999-9999" http://nodeexamples.ricklon.cloud9ide.com/persons/person/1  
+
+put a file:
+curl --upload-file tmp.txt  http://nodeexamples.ricklon.cloud9ide.com
+
+
+
+delete:
+curl -i -H "Accept: application/json" -X DELETE http://nodeexamples.ricklong.cloud9ide.com/persons/person/1  
