@@ -9,6 +9,8 @@ app.configure(function() {
         showStack: true
     }));
 });
+app.set("view engine", "html");
+app.register(".html", require("jqtpl").express);
 
 app.set('views', __dirname, +'/views/');
 
