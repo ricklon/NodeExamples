@@ -23,4 +23,12 @@ app.get('/', function(req, res) {
 	res.render('index.html');
 });
 
-app.listen(37881);
+app.get('/test', function(req, res) {
+    res.render('test.html');
+});
+
+app.get('/test/test.html', function(req, res) {
+    res.render('test.html');
+});
+
+app.listen(process.env.C9_PORT);

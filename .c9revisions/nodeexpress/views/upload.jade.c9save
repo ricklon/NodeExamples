@@ -1,0 +1,1 @@
+{"ts":1344895882748,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"form(action=\"...\", method=\"post\", enctype=\"multipart/form-data\")\n  input(type=\"file\", name=\"displayImage\")"]],"start1":0,"start2":0,"length1":0,"length2":106}]],"length":106}

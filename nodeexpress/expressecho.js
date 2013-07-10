@@ -1,5 +1,6 @@
 var express = require('express');
-var app = express.createServer();
+var app = express();
+
 app.use(express.bodyParser());
 
 app.configure(function() {
@@ -32,4 +33,4 @@ app.del('/*', function(req, res){
     res.send(echovalue );
 });
 
-app.listen(process.env.C9_PORT);
+app.listen(process.env.PORT);
